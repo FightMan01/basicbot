@@ -27,7 +27,7 @@ async def ping(ctx):
     else:
         return False
 
-@client.command(, pass_context=True)
+@client.command(pass_context=True)
 async def purge(ctx, amount=301):
     '''Usage: b!purge [amount]'''
     if ctx.message.author.server_permissions.administrator or ctx.message.author.id == '416226732966936577':
